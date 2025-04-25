@@ -15,12 +15,12 @@ export default function SignIn() {
             await signIn(email, password);
             alert('Login com sucesso');
             router.push('/');
-        } catch(error:any) {
+        } catch (error: any) {
             alert(error.message);
         }
     }
 
-    return(
+    return (
         <div className="h-full flex justify-center items-center mt-10 p-10">
             <div className="w-full max-w-md space-y-6">
                 <h2 className="text-3xl font-bold text-gray-800">Login</h2>

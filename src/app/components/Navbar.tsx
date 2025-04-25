@@ -1,4 +1,4 @@
-import { ShoppingCart, User } from "lucide-react"
+import { ShoppingBasket, User } from "lucide-react"
 import Link from "next/link"
 
 export default function Navbar() {
@@ -10,10 +10,14 @@ export default function Navbar() {
                 </Link>
             </h1>
             <ul className="flex gap-4 text-white items-center">
-                <li><Link href={"/products"}>Produtos</Link></li>
+                <li>   
+                    <Link href={"/products"}>
+                        Produtos
+                    </Link>
+                </li>
                 <li>
                     <Link href={"/cart"}>
-                        <ShoppingCart size={30} />
+                        <ShoppingBasket size={30} />
                     </Link>
                 </li>
                 <li>
